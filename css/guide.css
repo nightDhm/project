@@ -1,0 +1,52 @@
+#yd{
+	text-align: center;
+	margin: 0px auto 0px;
+}
+
+#sw{
+	background-image: url(../img/yindao/yingdao-1.png);
+	height: 655px;
+}
+#sw2{
+	background-image: url(../img/yindao/yingdao-2.png);
+	height: 655px;
+}
+#sw3{
+	background-image: url(../img/yindao/yingdao-3.png);
+	height: 655px;
+}
+
+#yd img{
+	width: auto;
+	height: 150px;
+	
+}
+p{
+	font-size: 20px;
+	color: white;
+}
+.txt2{
+	font-family: "微软雅黑";
+	font-weight: bold;
+	margin-top: 570px;
+}
+#start-btn{
+	width: 150px;
+	height: 42px;
+	border-radius: 21px;
+	border-color: white;
+	position: absolute;
+	left: 50%;
+	margin-left: -70px;
+	margin-top: 570px;
+	color: white;
+}
+.mui-slider-indicator .mui-indicator{
+	width: 8px;
+	height: 8px;
+	margin: 1px 8px;
+	background:white;
+}
+.mui-slider-indicator .mui-active.mui-indicator{
+	background: rgba(19,91,162,1);
+}

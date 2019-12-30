@@ -1,0 +1,65 @@
+*{margin: 0px;padding: 0px;}
+
+
+
+
+.touxiang{
+	width: 130px;
+	height: 130px;
+	 margin: 10px auto;
+	
+}
+
+.tp{
+
+	margin-top: 10px;
+}
+
+#pswbox{
+	border:none ;
+}
+
+.boder-box{
+	margin: 10px auto;
+	width: 250px;
+
+
+	height: 40px;
+}
+.non-boder-box{
+	height: 35px;
+}
+.mi-box{
+	padding-top: 6px;
+	text-align: center;
+
+}
+
+p{
+	font-size: 17px;
+}
+.p-top{
+
+	margin-top: 5px;
+
+}
+.reg-box{
+	text-align: center;
+}
+.reg-box #denglu{
+	margin-top: 15px;
+	width: 120px;
+	height: 40px;
+	border-radius: 20px;
+	color: white;
+	background-color: rgb(160,237,245);
+}
+.mui-row a{
+margin-top: 68%;
+}
+.mui-row a:first-child{
+	float: left;
+}
+.mui-row a:last-child{
+	float: right;
+}

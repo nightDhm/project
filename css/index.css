@@ -1,0 +1,67 @@
+.mui-slide-in .mui-off-canvas-left .bj-color{
+	background-color: white;
+}
+.mui-slide-in .mui-off-canvas-left .mui-scroll-wrapper .ys-color{
+	background-color:white;
+	color: black;
+
+}
+.mui-table-view-inverted:before{
+	background-color: white;
+}
+.mui-table-view-inverted:after{
+	background-color: white;
+}
+.mui-table-view-inverted .mui-table-view-cell:after{
+	background-color: white;
+}
+
+
+
+.title {
+			background-color: rgba(246,142,164);	
+		height: 100px;	
+			}
+.title .zt-color{
+		color: black;
+		font-size: 18px;
+}
+
+.title+.content {
+				margin: 10px 15px 35px;
+				color: #bbb;
+				text-indent: 1em;
+				font-size: 14px;
+				line-height: 24px;
+			}
+			
+.mui-table-view-inverted .mui-table-view-cell>a:not(.mui-btn).mui-active{
+	background-color: #999999;
+}
+
+.mui-inner-wrap .hed-color{
+	background-color: rgba(246,142,164);;
+}
+
+.mui-icon-bars:before{
+	color: white;
+	
+}
+
+.mui-icon-email:before{
+	color: white;
+}
+
+.box {
+	margin-top: 20px;
+	
+}
+.box .top-box{
+	float: right;
+	margin-right: 20px;
+}
+.box .bnt-box{
+	margin-left: 20px;
+}
+
+

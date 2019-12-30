@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum=1.0,user-scalable=no">
+	<style type="text/css">
+		#mapWrap {
+			margin: 10px 0;
+			width: 100%;
+			height: 300px;
+		}
+	</style>
+</head>
+<body>
+	<p>HTML5定位功能</p>
+	<p>您的纬度：<span id="latitude"></span></p>
+	<p>您的精度：<span id="longitude"></span></p>
+	<p id="errMsg"></p>
+ 
+	<button id="openTXMap">开启腾讯地图</button>
+	<div id="mapWrap"></div>
+ 
+	<script>
+		var latitude, longitude
+ 
+		if (navigator.geolocation) {
+			console.log("支持")
+			navigator.geolocation.getCurrentPosition(showPosition, showError)	
+			// navigator.geolocation.watchPosition(showPosition, showError)	
+		} 
+		else {
+			console.log("不支持")
+		}
+ 
+		function showPosition (position) {
+			document.querySelector('#latitude').innerText  = position.coords.latitude
+			document.querySelector('#longitude').innerText = position.coords.longitude
+			// 这里做了经纬度偏差的修正
+			latitude  = position.coords.latitude  - 1.002463
+			longitude = position.coords.longitude + 1.005591
+		}
+ 
+		function showError (error) {
+			errMsg = document.querySelector('#errMsg')
+ 
+			switch(error.code) {
+				case error.PERMISSION_DENIED:
+					// User denied the request for Geolocation.
+					errMsg.innerText = "定位失败,用户拒绝请求地理定位"
+					break;
+				case error.POSITION_UNAVAILABLE:
+					// Location information is unavailable.
+					errMsg.innerText = "定位失败,位置信息是不可用"
+					break;
+				case error.TIMEOUT:
+					// The request to get user location timed out.
+					errMsg.innerText = "定位失败,请求获取用户位置超时"
+					break;
+				case error.UNKNOWN_ERROR:
+					// An unknown error occurred.
+					errMsg.innerText = "定位失败,定位系统失效"
+					break;
+		        }
+		}
+ 
+	function init() {
+            var myLatlng = new qq.maps.LatLng(latitude, longitude);
+            var myOptions = {
+                zoom: 16,
+                center: myLatlng
+            };
+            var map = new qq.maps.Map(document.getElementById("mapWrap"), myOptions);
+        }
+ 
+        function loadScript() {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://map.qq.com/api/js?v=2.exp&key=5JEBZ-2I5E5-DFBIF-QF3XS-RQQP6-P5BB2callback=init";
+            document.body.appendChild(script);
+        }
+ 
+        document.getElementById("openTXMap").onclick = function () {
+        	loadScript()
+		init()
+        }
+ 
+	</script>
+
+
+	</body>
+</html>

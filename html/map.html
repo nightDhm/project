@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+    <title></title>
+   
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="../css/index.css" />
+	<link rel="stylesheet" href="../css/map.css" />	
+
+</head>
+<body>
+	<!-- 主界面不动、菜单移动 -->
+	<!-- 侧滑导航根容器 -->
+	<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+	  <!-- 菜单容器 -->
+	  <aside class="mui-off-canvas-left" id="offCanvasSide">
+	    <div class="mui-scroll-wrapper bj-color">
+	      <div class="mui-scroll">
+	        <!-- 菜单具体展示内容 -->
+	        
+	        <div class="title">
+	        	<img width="70px"height="70px" class="tp" src="../img/biaoqian/1.png" /> 
+	        	<span class="zt-color">admin</span>
+	        	<a class="">退出</a>
+	        </div>
+						<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted ys-color">
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									首页
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									历史记录
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									订单管理
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									我的收藏
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									热门活动
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									联系客服
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									设置
+								</a>
+							</li>
+						</ul>
+	        
+	      </div>
+	    </div>
+	  </aside>
+	  <!-- 主页面容器 -->
+	  <div class="mui-inner-wrap">
+	    <!-- 主页面标题 -->
+	    <header class="mui-bar mui-bar-nav hed-color">
+	      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+	      <h1 class="mui-title">地图</h1>
+	    </header>
+	    
+	    <nav class="mui-bar mui-bar-tab">
+		    <a id="nav-home" class="mui-tab-item">
+		        <span class="mui-icon mui-icon-home"></span>
+		        <span class="mui-tab-label">首页</span>
+		    </a>
+		    <a id="nav-ditu" class="mui-tab-item mui-active">
+		        <span class="mui-icon mui-icon-phone"></span>
+		        <span class="mui-tab-label">地图</span>
+		    </a>
+			<a id="nav-dindan" class="mui-tab-item" >
+		        <span class="mui-icon mui-icon-plusempty"></span>
+		        <span class="mui-tab-label">订单</span>
+		   </a>
+		    <a id="nav-cart" class="mui-tab-item">
+		        <span class="mui-icon mui-icon-navigate"></span>
+		        <span class="mui-tab-label">社区</span>
+		    </a>
+		    <a id="nav-wode" class="mui-tab-item">
+		        <span class="mui-icon mui-icon-gear"></span>
+		        <span class="mui-tab-label">我的</span>
+		    </a>
+		</nav>
+		
+	    <div class="mui-content mui-scroll-wrapper">
+	    <div class="mui-off-canvas-backdrop">
+	    		
+	    	 <div id="container"></div>
+	    	
+	    </div>
+	  </div>
+	</div>
+	
+	 	<script src="../js/mui.min.js"></script>
+	    <script type="text/javascript" src="../js/map.js" ></script>
+		 <script type="text/javascript" charset="utf-8">
+		 mui.init()
+    </script>
+		<script type="text/javascript" src="../js/jquery.js" ></script>
+		<script type="text/javascript" src="../js/lianjie.js" ></script>		
+</body>
+</html>

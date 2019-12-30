@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/dindan.css" />
+	</head>
+	<body>
+			<!-- 主界面不动、菜单移动 -->
+	<!-- 侧滑导航根容器 -->
+	<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+	  <!-- 菜单容器 -->
+	  <aside class="mui-off-canvas-left" id="offCanvasSide">
+	    <div class="mui-scroll-wrapper bj-color">
+	      <div class="mui-scroll">
+	        <!-- 菜单具体展示内容 -->
+	        
+	        <div class="title">
+	        	<img width="70px"height="70px" class="tp" src="../img/biaoqian/1.png" /> 
+	        	<span class="zt-color">admin</span>
+	        	<a class="">退出</a>
+	        </div>
+						<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted ys-color">
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									首页
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									历史记录
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									订单管理
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									我的收藏
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									热门活动
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									联系客服
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									设置
+								</a>
+							</li>
+						</ul>
+	        
+	      </div>
+	    </div>
+	  </aside>
+	  <!-- 主页面容器 -->
+	  <div class="mui-inner-wrap">
+	    <!-- 主页面标题 -->
+	    <header class="mui-bar mui-bar-nav hed-color">
+	      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+	      <h1 class="mui-title">订单</h1>
+	    </header>
+	    <nav class="mui-bar mui-bar-tab">
+		    <a id="nav-home" class="mui-tab-item">
+		        <span class="mui-icon mui-icon-home"></span>
+		        <span class="mui-tab-label">首页</span>
+		    </a>
+		    <a id="nav-ditu" class="mui-tab-item">
+		        <span class="mui-icon mui-icon-phone"></span>
+		        <span class="mui-tab-label">地图</span>
+		    </a>
+			<a id="nav-dindan" class="mui-tab-item mui-active" >
+		        <span class="mui-icon mui-icon-plusempty"></span>
+		        <span class="mui-tab-label">订单</span>
+		   </a>
+		    <a id="nav-cart" class="mui-tab-item">
+		        <span class="mui-icon mui-icon-navigate"></span>
+		        <span class="mui-tab-label">社区</span>
+		    </a>
+		    <a id="nav-wode" class="mui-tab-item">
+		        <span class="mui-icon mui-icon-gear"></span>
+		        <span class="mui-tab-label">我的</span>
+		    </a>
+		</nav>
+	     
+	    <div class="mui-off-canvas-backdrop">
+	    	
+	    <div class="mui-content mui-scroll-wrapper">
+	    <div class="mui-off-canvas-backdrop">
+	      <div class="mui-scroll kj-bj">
+	         
+			<form class="mui-input-group">
+			    <div class="mui-input-row">
+			       	<label>订单编号:</label>
+			        <input type="text" class="mui-input-clear" placeholder="01">
+			    </div>
+			    
+			    <div class="mui-input-row">
+			       	<label>姓名:</label>
+			        <input type="text" class="mui-input-clear" placeholder="张三">
+			    </div>
+			    
+			    <div class="mui-input-row">
+			       	<label>电话:</label>
+			        <input type="text" class="mui-input-clear" placeholder="123456789">
+			    </div>
+			    
+			    <div class="mui-input-row">
+			       	<label>地址:</label>
+			        <input type="text" class="mui-input-clear" placeholder="广东省深圳市">
+			    </div>
+			    
+			    <div class="mui-input-row">
+			       	<label>垃圾种类:</label>
+			       	 <select>
+						  <option value="volvo">厨余垃圾</option>
+						  <option value="saab">可回收垃圾</option>
+						  <option value="opel">有害垃圾</option>
+						  <option value="audi">其他垃圾</option>
+					</select>
+			    </div>
+			    
+			    <div class="mui-input-row">
+			       	<label>重量(kg):</label>
+			        <select>
+						  <option value="volvo">1</option>
+						  <option value="saab">2</option>
+						  <option value="opel">3</option>
+						  <option value="audi">4</option>
+						  <option value="volvo">5</option>
+						  <option value="saab">6</option>
+						  <option value="opel">7</option>
+						  <option value="audi">8</option>
+						  <option value="volvo">9</option>
+						  <option value="saab">10</option>
+					</select>
+			    </div>
+		    	
+		    	<div style="text-align: center;margin-top: 30px;" class="mui-row">
+			    <button type="button" class="mui-btn mui-btn-blue mui-btn-outlined btbuju">确认订单</button>
+			    </div>
+			    
+			</form>
+	    </div> 
+	    
+	    
+	    </div>
+	  </div>
+	</div>	
+	
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		
+		<script type="text/javascript" src="../js/jquery.js" ></script>
+		<script type="text/javascript" src="../js/lianjie.js" ></script>
+	
+	</body>
+
+</html>
