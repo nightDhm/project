@@ -1,19 +1,19 @@
 document.getElementById('nav-home').addEventListener('tap',function(){
-			mui.openWindow('../index.html');
-		});
-		
+    mui.openWindow('index.html');
+});
+
 document.getElementById('nav-ditu').addEventListener('tap',function(){
-			mui.openWindow('map.html');
-		});
-		
+    mui.openWindow('html/map.html');
+});
+
 document.getElementById('nav-dindan').addEventListener('tap',function(){
-			mui.openWindow('dindan.html');
-		});
-		
+    mui.openWindow('html/dindan.html');
+});
+
 document.getElementById('nav-cart').addEventListener('tap',function(){
-			mui.openWindow('community.html');
-		});
-		
+    mui.openWindow('html/community.html');
+});
+
 document.getElementById('nav-wode').addEventListener('tap',function(){
-			mui.openWindow('myd.html');
-		});
+    mui.openWindow('html/myd.html');
+});

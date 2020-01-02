@@ -15,14 +15,14 @@
 <body>
 	<!-- 主界面不动、菜单移动 -->
 	<!-- 侧滑导航根容器 -->
-	<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+	<div class="mui-off-canvas-wrap mui-slide-in">
 	  <!-- 菜单容器 -->
 	  <aside class="mui-off-canvas-left" id="offCanvasSide">
 	    <div class="mui-scroll-wrapper bj-color">
 	      <div class="mui-scroll">
 	        <!-- 菜单具体展示内容 -->
 	        
-	        <div class="title">
+	        <div class="title" style="background-color: rgba(246,142,164);">
 	        	<img width="70px"height="70px" class="tp" src="../img/biaoqian/1.png" /> 
 	        	<span class="zt-color">admin</span>
 	        	<a class="">退出</a>
@@ -71,7 +71,7 @@
 	  <!-- 主页面容器 -->
 	  <div class="mui-inner-wrap">
 	    <!-- 主页面标题 -->
-	    <header class="mui-bar mui-bar-nav hed-color">
+	    <header class="mui-bar mui-bar-nav" style="background-color: rgba(246,142,164);">
 	      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
 	      <h1 class="mui-title">地图</h1>
 	    </header>
@@ -105,9 +105,14 @@
 	    	 <div id="container"></div>
 	    	
 	    </div>
-	  </div>
 	</div>
-	
+	</div>
+	<script type="text/javascript" >
+	$('.mui-inner-wrap').on('drag', function(event) {
+event.stopPropagation();
+});
+
+</script>
 	 	<script src="../js/mui.min.js"></script>
 	    <script type="text/javascript" src="../js/map.js" ></script>
 		 <script type="text/javascript" charset="utf-8">
